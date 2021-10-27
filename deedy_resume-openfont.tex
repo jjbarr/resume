@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated{2021/01/10}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Joshua}{Barrett}{
+  \urlstyle{same}\href{http://jjbarr.github.io}{jjbarr.github.io}\\
+  \href{mailto:jjbarr.public@gmail.com}{jjbarr.public@gmail.com} |
+  (203)-736-7679
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of \\ Massachusetts Amherst}
+\descript{BS in Computer Science (in progress)}
+\location{October 2019-Present | Amherst, MA}
+College of Information and Computer Science \\
+\location{ Cum. GPA: 3.695 \\
+Major GPA: 3.559 }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/jjbarr}{\bf jjbarr} \\
+%LinkedIn://  \href{}{} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+Data Structures \\
+Systems \\
+{\footnotesize \textit{\textbf{(Teaching Asst)}}} \\
+Programming Methodology \\
+Theory of Computation \\
+Algorithms \\
+Computer Logic \\
+Networks \\
+Operating Systems \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+
+\location{More Experience}
+C \textbullet{} Rust \textbullet{} Common Lisp \textbullet{} Scheme \\
+\textbullet{} JavaScript
+
+\location{Less Experience}
+Python \textbullet{} Ruby \textbullet{} Shell \textbullet{} Assembler
+\sectionsep{}
+\subsection{Other Technical}
+Unix \textbullet{} SQL
+\sectionsep{}
+\subsection{Non-technical}
+Writing Documentation
+\sectionsep{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Barrett Outdoor}
+\descript{|R\&D intern}
+\location{Summer 2019 | West Haven, CT}
+\vspace{\topsep}
+\begin{tightemize}
+\item Prototyped hardware and software for Billboard lighting control,
+  scheduling, and error reporting.
+\end{tightemize}
+\runsubsection{UMass Amherst}
+\descript{|Undergraduate Research}
+\location{2021- | Amherst, MA}
+\vspace{\topsep}
+\begin{tightemize}
+\item Developed verification programs for a persistent, NVRAM-backed object
+  store using the spin model checking tool.
+\end{tightemize}
+
+\sectionsep{}
+
+\section{Github Projects}
+\runsubsection{mpk} https://github.com/jjbarr/mpk \\
+A small C99 library for working with msgpack data. Performs poorly, but does no
+heap allocations, which is a useful tradeoff sometimes.
+\runsubsection{megutil} https://github.com/jjbarr/megutil \\
+A command-line utility written in Rust for extracting data from Petroglyph
+Games' \texttt{.meg} archive format.
+\runsubsection{idice} https://github.com/jjbarr/idice \\
+A small dice-rolling program written in C. An experiment in learning
+\texttt{yacc} and \texttt{lex}, it was originally intended for use in a somewhat
+ill-conceived discord bot I wrote.
+\runsubsection{blinkenlights} https://github.com/jjbarr/blinkenlights \\
+The code portion of a physical performance monitor (one strip of LEDs per CPU
+core). Hacked up in a weekend for use as a demo, so there are a lot of loose
+wires sticking out.
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
