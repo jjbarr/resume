@@ -50,7 +50,7 @@
     title: "Undergraduate Researcher"
 )
 - Developed verification programs for a persistent, NVRAM-backed object
-  store using the "spin" model checking tool.
+  store using the `spin` model checking tool.
 - Built generic, reusable components for simulating the CPU-to-memory interface,
   suitable for modelling other low-level multithreaded software's behavior with
   a variety of cache coherency models.
@@ -78,7 +78,8 @@
   employees at the end of my internship.
 
 == Skills and Awards
-- *Programming Languages*: Rust, C, Python, JavaScript, Bash, Lisp, Haskell
+- *Programming Languages*: Rust, C, Python, JavaScript, Bash, Lisp, Haskell,
+  J, BQN
 - *Technologies*: Unix, Docker/Podman, Git, Nix/NixOS
 - *Awards*: 2nd Best Hardware Hack at HackUMass XI, 404th Best Team UMassCTF
   2021
