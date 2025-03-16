@@ -77,8 +77,8 @@
 - Presented a summary of my work experiences in PowerPoint form to RWA
   employees at the end of my internship.
 
-== Projects
-
-== Extracurriculars
-
 == Skills and Awards
+- *Programming Languages*: Rust, C, Python, JavaScript, Bash, Lisp, Haskell
+- *Technologies*: Unix, Docker/Podman, Git, Nix/NixOS
+- *Awards*: 2nd Best Hardware Hack at HackUMass XI, 404th Best Team UMassCTF
+  2021
